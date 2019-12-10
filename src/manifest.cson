@@ -1,0 +1,19 @@
+manifest_version: 2
+name: 'SearchSwap'
+version: '1.0'
+description: 'Cycle a search between search engines'
+author: 'Jer Megel'
+page_action: {}
+permissions: [
+	'tabs'
+	'search'
+]
+background:
+	scripts: [
+		'js/lib/webextension-polyfill/browser-polyfill.js'
+		'js/background/main.js'
+	]
+commands:
+	_execute_page_action:
+		suggested_key:
+			default: 'Ctrl+Alt+S'
