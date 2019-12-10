@@ -42,7 +42,7 @@ browser.pageAction.onClicked.addListener (tab) ->
 			tab.url.match(
 				/[?&]q=([^?&]+)/
 			)[1]
-		)
+		).replace(/\+/g, ' ')
 
 	await browser.search.search(
 		engine: next_search_engine.name
