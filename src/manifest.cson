@@ -3,7 +3,11 @@ name: 'SearchSwap'
 version: '1.0'
 description: 'Cycle a search between search engines'
 author: 'Summer ☀️'
-page_action: {}
+icons:
+	96: 'images/search_swap/96.png'
+page_action:
+	default_icon:
+		96: 'images/search_swap/96.png'
 permissions: [
 	'tabs'
 	'search'
