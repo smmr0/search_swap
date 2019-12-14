@@ -21,3 +21,6 @@ commands:
 	_execute_page_action:
 		suggested_key:
 			default: 'Ctrl+Alt+S'
+browser_specific_settings:
+	gecko:
+		id: 'search_swap@summerm.dev'
