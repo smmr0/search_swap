@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "coffeelint": "^2.1.0",
+    "@coffeelint/cli": "^4.0.0",
     "coffeescript": "^2.5.1",
     "cson": "^7.20.0",
     "fs-extra": "^9.0.1",
