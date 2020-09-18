@@ -1,6 +1,6 @@
 { spawnSync } = require 'child_process'
 coffee = require 'coffeescript'
-coffeelint = require 'coffeelint'
+coffeelint = require '@coffeelint/cli'
 cson = require 'cson'
 fs = require 'fs-extra'
 web_ext = require 'web-ext'
