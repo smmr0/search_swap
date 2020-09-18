@@ -70,7 +70,7 @@ task 'build', ->
 task 'package', ->
 	invoke 'build'
 
-	await web_ext.default.cmd.build(
+	await web_ext.cmd.build(
 		sourceDir: 'build'
 		artifactsDir: 'dist'
 		overwriteDest: true
