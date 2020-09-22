@@ -1,4 +1,7 @@
 {
+  "installConfig": {
+    "pnp": true
+  },
   "devDependencies": {
     "@coffeelint/cli": "^4.0.0",
     "coffeescript": "^2.5.1",

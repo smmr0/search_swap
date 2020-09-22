@@ -63,7 +63,7 @@ task 'build', ->
 		fs.removeSync(file)
 
 	fs.copySync(
-		'node_modules/webextension-polyfill/dist/browser-polyfill.js'
+		require.resolve('webextension-polyfill')
 		'build/js/lib/webextension-polyfill/browser-polyfill.js'
 	)
 
