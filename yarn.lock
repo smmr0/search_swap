@@ -41,7 +41,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@coffeelint/cli@npm:^5.0.1":
+"@coffeelint/cli@npm:>=5.0.1":
   version: 5.0.1
   resolution: "@coffeelint/cli@npm:5.0.1"
   dependencies:
@@ -790,7 +790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"coffeescript@npm:2.5.1, coffeescript@npm:^2.5.1":
+"coffeescript@npm:2.5.1, coffeescript@npm:>=2.5.1":
   version: 2.5.1
   resolution: "coffeescript@npm:2.5.1"
   bin:
@@ -962,7 +962,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cson@npm:^7.20.0":
+"cson@npm:>=7.20.0":
   version: 7.20.0
   resolution: "cson@npm:7.20.0"
   dependencies:
@@ -1750,7 +1750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
+"fs-extra@npm:>=10.0.0":
   version: 10.0.0
   resolution: "fs-extra@npm:10.0.0"
   dependencies:
@@ -3621,12 +3621,12 @@ resolve@^1.20.0:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@coffeelint/cli": ^5.0.1
-    coffeescript: ^2.5.1
-    cson: ^7.20.0
-    fs-extra: ^10.0.0
-    web-ext: ^6.2.0
-    webextension-polyfill: ^0.8.0
+    "@coffeelint/cli": ">=5.0.1"
+    coffeescript: ">=2.5.1"
+    cson: ">=7.20.0"
+    fs-extra: ">=10.0.0"
+    web-ext: ">=6.2.0"
+    webextension-polyfill: ">=0.8.0"
   languageName: unknown
   linkType: soft
 
@@ -4388,7 +4388,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"web-ext@npm:^6.2.0":
+"web-ext@npm:>=6.2.0":
   version: 6.2.0
   resolution: "web-ext@npm:6.2.0"
   dependencies:
@@ -4428,7 +4428,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"webextension-polyfill@npm:^0.8.0":
+"webextension-polyfill@npm:>=0.8.0":
   version: 0.8.0
   resolution: "webextension-polyfill@npm:0.8.0"
   checksum: 2e66ba52cc70b9e631edadce3d06b43a5aecbe3cbef73920c344e2b062aaf970b3c53e1aaae733086c4e50a1e34d63ed7d3f836b5ee995efa255f1e9f55e67fd
