@@ -5,6 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - run: git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+      - run: echo "$HOME/.nodenv/bin" >> $GITHUB_PATH
+      - run: mkdir -p "$(nodenv root)/plugins"
+      - run: git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+      - run: echo "$(nodenv root)/plugins/node-build/bin" >> $GITHUB_PATH
+      - run: eval "$(nodenv init -)"
+      - run: echo "$(nodenv root)/shims" >> $GITHUB_PATH
+      - run: nodenv install "$(cat .node-version)"
+      - run: npm install --global yarn
       - run: yarn install
       - run: yarn lint
