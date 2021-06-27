@@ -1,11 +1,11 @@
 {
 	"private": true,
 	"devDependencies": {
-		"@coffeelint/cli": ">=4.0.0",
+		"@coffeelint/cli": ">=5.0.1",
 		"coffeescript": ">=2.5.1",
 		"cson": ">=7.20.0",
 		"fs-extra": ">=10.0.0",
-		"web-ext": ">=6.1.0",
+		"web-ext": ">=6.2.0",
 		"webextension-polyfill": ">=0.8.0"
 	},
 	"scripts": {
