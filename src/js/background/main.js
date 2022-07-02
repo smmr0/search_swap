@@ -25,9 +25,14 @@ async function togglePageAction(tab) {
 	}
 }
 
-browser.tabs.onUpdated.addListener(async (tabId) => {
-	togglePageAction(await browser.tabs.get(tabId));
-});
+browser.tabs.onUpdated.addListener(
+	async (tabId) => {
+		togglePageAction(await browser.tabs.get(tabId));
+	},
+	{
+		properties: ["url"]
+	}
+);
 (async function () {
 	for (tab of await browser.tabs.query({})) {
 		togglePageAction(tab);
