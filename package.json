@@ -1,16 +1,15 @@
 {
 	"private": true,
 	"devDependencies": {
-		"@coffeelint/cli": ">=5.0.1",
-		"coffeescript": ">=2.5.1",
-		"cson": ">=7.20.0",
+		"eslint": "^8.19.0",
 		"fs-extra": ">=10.0.0",
 		"web-ext": ">=6.2.0",
 		"webextension-polyfill": ">=0.8.0"
 	},
 	"scripts": {
-		"lint": "cake lint",
-		"build": "cake build",
-		"package": "cake package"
+		"lint": "eslint src/ $@",
+		"clean": "rm -rf build/ dist/",
+		"build": "rm -rf build/ && cp -R src/ build/ && yarn node -e \"require('fs-extra').copySync(require.resolve('webextension-polyfill'), 'build/js/lib/webextension-polyfill/browser-polyfill.js')\"",
+		"package": "yarn run build && yarn run web-ext build --source-dir build/ --artifacts-dir dist/ --overwrite-dest $@"
 	}
 }
