@@ -13,6 +13,10 @@ to cycle a search between search engines.
 1. `yarn run build`
 2. Load extension from `build/`
 
+## Run in browser
+
+`yarn run run`
+
 ## Package for distribution
 
 1. `yarn run package`
