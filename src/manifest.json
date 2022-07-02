@@ -1,37 +1,37 @@
 {
-  "manifest_version": 2,
-  "name": "SearchSwap",
-  "version": "1.0.2",
-  "description": "Cycle a search between search engines",
-  "author": "Summer ☀️",
-  "icons": {
-    "96": "images/search_swap/96.png"
-  },
-  "page_action": {
-    "default_icon": {
-      "96": "images/search_swap/96.png"
-    }
-  },
-  "permissions": [
-    "tabs",
-    "search"
-  ],
-  "background": {
-    "scripts": [
-      "js/lib/webextension-polyfill/browser-polyfill.js",
-      "js/background/main.js"
-    ]
-  },
-  "commands": {
-    "_execute_page_action": {
-      "suggested_key": {
-        "default": "Ctrl+Alt+S"
-      }
-    }
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "search_swap@summerm.dev"
-    }
-  }
+	"manifest_version": 2,
+	"name": "SearchSwap",
+	"version": "1.0.2",
+	"description": "Cycle a search between search engines",
+	"author": "Summer ☀️",
+	"icons": {
+		"96": "images/search_swap/96.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"96": "images/search_swap/96.png"
+		}
+	},
+	"permissions": [
+		"tabs",
+		"search"
+	],
+	"background": {
+		"scripts": [
+			"js/lib/webextension-polyfill/browser-polyfill.js",
+			"js/background/main.js"
+		]
+	},
+	"commands": {
+		"_execute_page_action": {
+			"suggested_key": {
+				"default": "Ctrl+Alt+S"
+			}
+		}
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "search_swap@summerm.dev"
+		}
+	}
 }
