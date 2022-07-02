@@ -1,5 +1,5 @@
-/.pnp.js
-/.pnp/
+/.pnp.*
+/.yarnrc.yml
 /.yarn/
 /build/
 /dist/

@@ -6,7 +6,8 @@ to cycle a search between search engines.
 
 ## Prerequisites
 
-`yarn install`
+1. `corepack enable`
+2. `yarn install`
 
 ## Build for development
 

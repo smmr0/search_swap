@@ -1,5 +1,6 @@
 {
 	"private": true,
+	"packageManager": "yarn@3.2.1",
 	"devDependencies": {
 		"eslint": "^8.19.0",
 		"fs-extra": ">=10.0.0",
