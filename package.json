@@ -7,7 +7,7 @@
 		"webextension-polyfill": ">=0.8.0"
 	},
 	"scripts": {
-		"lint": "eslint src/ $@",
+		"lint": "eslint src/ $@ && yarn run build && yarn run web-ext lint --source-dir build/ --warnings-as-errors",
 		"clean": "rm -rf build/ dist/",
 		"build": "rm -rf build/ && cp -R src/ build/ && yarn node -e \"require('fs-extra').copySync(require.resolve('webextension-polyfill'), 'build/js/lib/webextension-polyfill/browser-polyfill.js')\"",
 		"package": "yarn run build && yarn run web-ext build --source-dir build/ --artifacts-dir dist/ --overwrite-dest $@"
